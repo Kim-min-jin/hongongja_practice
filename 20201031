@@ -1,0 +1,33 @@
+public class ArrayCreateValueBy {
+	public static void main(String[] args) {
+		int[] scores;
+		scores = new int[] {83, 90, 87};
+		int sum1 = 0;
+		for(int i=0; i<3; i++) {
+			sum1+=scores[i];
+		}System.out.println("총합 : "+sum1);
+
+		int sum2 = add(new int[] {83, 90, 87});
+	}
+	public static int add(int[] scores) {
+		int sum = 0;
+		for(int i=0; i<3; i++) {
+			sum += scores[i];
+		}
+		return sum;
+	}
+}
+
+
+public class Max {
+	public static void main(String[] args) {
+		int max = 0;
+		int[] array = {1, 5, 3, 8, 2};
+
+		for(int i=0; i<5; i++) {
+			if(max < array[i]) {
+				max = array[i];
+			}	
+		}System.out.println(max);
+	}
+} // 배열에서 최대값 구하기 ( max를 임시로 지정 후 max값 구하기)
